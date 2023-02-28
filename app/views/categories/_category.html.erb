@@ -1,12 +1,15 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= category.description %>
-  </p>
-
-</div>
+<div class="category_page">
+  <div id="<%= dom_id category %>">
+    <tr>
+      <div>
+        <td><%= category.id %></td>
+        <td><%= category.name %></td>
+        <td><%= category.description %></td>
+        <td class="text-center">
+          <%= link_to "Show", category_path(category), class: 'btn btn-info' %>
+          <%= link_to "Edit", edit_category_path(category), class: 'btn btn-success' %>
+          <%= button_to "Delete", category , data: {confirm: 'Are you sure?'}, method: :delete, class:"btn btn-danger" %>
+        </div>
+      </tr>
+    </div>
+  </div>

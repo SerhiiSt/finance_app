@@ -1,15 +1,35 @@
-<h1>Reports Generator</h1>
-<form>
-Date From YYYY-MM-DD <input name = 'dateFrom' type='date'><br>
-Date To YYYY-MM-DD <input name = 'dateTo' type='date'><br>
-
-<button type="submit" class="btn btn-primary" id="btn_submit" name="btn_submit" value="send">Сума</button>
-<button type="reset" class="btn btn-primary" id="btn_reset" name="btn_reset" value="reset">Очистити</button>
-<button type="submit" class="btn btn-success" id="btn_graph" name="btn_graph" value="graph" >По категоріям</button>
-<button type="submit" class="btn btn-danger" id="btn_dynamic" name="btn_dynamic" value="dynamic" >По датам</button>
-
-</form>
-
-
-
-
+<div class="container">
+  <%= render "helper" %>
+  <div class="report_generator">
+    <h1>Reports Generator</h1>
+  </div>
+  <%= form_with url: "report_by_category", method: :get do |form| %>
+    <div class=reports>
+      <div>
+        <%= form.label 'Type of Operation' %><br>
+        <%= form.select :type_operation, ["Spending", "Income"] %>
+      </div>
+      <br>
+      <div>
+        <%= form.label 'Category' %><br>
+        <%= form.select :category_id, Category.pluck(:name,:id) %>
+      </div>
+      <br>
+      <div>
+        <%= form.label 'From' %><br>
+        <%= form.datetime_field :start_date %>
+      </div>
+      <br>
+      <div>
+        <%= form.label 'To' %><br>
+        <%= form.datetime_field :end_date %>
+      </div>
+      <br>
+      <%= link_to "Home", root_path, class:"btn btn-outline-dark", class:"btn btn-warning" %>
+      <%= form.submit "Report by Category", class:"btn btn-success" %>
+      <input type="reset" value="Clear" class="btn btn-danger">
+      <input type="submit" formaction='report_by_dates' value="Report by Dates" class="btn btn-info">
+    <% end %>
+    <br>
+  </div>
+</div>

@@ -1,2 +1,35 @@
-<h1>Reports#report_by_dates</h1>
-<p>Find me in app/views/reports/report_by_dates.html.erb</p>
+<div class="container">
+  <div class="report_d">
+    <h1>Reports by Dates</h1>
+    <canvas id='report_by_dates' width='900' height='400'></canvas>
+  </div>
+  <script>
+    const ctx = document.getElementById('report_by_dates');
+    const data = {
+    labels: <%= raw @date %>,
+    datasets: [{
+      label: 'Report by Dates',
+      data: <%= raw @date_amount %>,
+      fill: false,
+      borderColor: 'rgb(75, 192, 192)',
+      tension: 0.1
+    }]
+    };
+
+    const config = {
+    type: 'line',
+    data: data,
+    options:{
+      responsive:false,
+      plugins: {
+              title: {
+                  display: true,
+                  text: 'Report from '+['<%= @start_date %>']+ ' to ' +
+                  ['<%= @end_date %>']
+              }
+          }
+    }
+    };
+    const report_by_category = new Chart(ctx,config);
+  </script>
+</div>

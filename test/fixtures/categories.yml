@@ -1,9 +1,33 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-  description: MyString
-
-two:
-  name: MyString
-  description: MyString
+Childcare:
+  description: Allowance for children
+  name: Childcare
+Clothing And Shoes:
+  description: Spending on perfect view
+  name: Clothing And Shoes
+HouseholdChemicals:
+  description: Shampoons, deodorants
+  name: Household Chemicals
+Markets:
+  description: Spending money on food
+  name: Markets
+Medicine:
+  description: Allowance for drugs, medicine procedures
+  name: Medicine
+Mobile connection and Internet:
+  description: Payment for mobile connection and Internet
+  name: Mobile connection and Internet
+Presents:
+  description: Money spent on gifts
+  name: Presents
+Restaurants:
+  description: Expenses for public places
+  name: Restaurants
+Sports And Leisure:
+  description: Spendings for active rest
+  name: Sports And Leisure
+Transport:
+  description: Payment for gas, fares
+  name: Transport
+Utilities (Monthly):
+  description: Allowance for bills
+  name: Utilities (Monthly)

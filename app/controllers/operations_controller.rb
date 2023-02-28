@@ -3,7 +3,7 @@ class OperationsController < ApplicationController
 
   # GET /operations or /operations.json
   def index
-    @operations = Operation.all
+    @operations = Operation.page(params[:page])
   end
 
   # GET /operations/1 or /operations/1.json
@@ -58,13 +58,14 @@ class OperationsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_operation
-      @operation = Operation.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def operation_params
-      params.require(:operation).permit(:amount, :odate, :description, :category_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_operation
+    @operation = Operation.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def operation_params
+    params.require(:operation).permit(:amount, :odate, :description, :category_id)
+  end
 end

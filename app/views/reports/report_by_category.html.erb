@@ -1,4 +1,47 @@
-<h1>Reports : Report_by_category</h1>
-<form action='report_by_category' method='GET'>
+<div class="container">
+  <div class="report_c">
+    <h1>Report by Category</h1>
+    <div class="chart-container" style="position: relative; height:60vh; width:160vw">
+      <canvas id="report_by_category"></canvas>
+    </div>
+  </div>
+  <script>
+    const ctx = document.getElementById('report_by_category');
+    const data = {
+    labels: <%= raw @category_name %>,
+    datasets: [{
+      label: 'Report by Category',
+      data: <%= raw @category_amount %>,
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
+        'rgb(243, 105, 36)',
+        'rgb(0, 158, 73)',
+        'rgb(0, 188, 242)',
+        'rgb(186, 216, 10)',
+        'rgb(255, 241, 0)',
+        'rgb(236, 0, 140)',
+        'rgb(0, 178, 148)'
+      ],
+      hoverOffset: 4
+    }]
+    };
+    const config = {
+    type: 'doughnut',
+    data: data,
+    responsive: true,
+    options: {
+          plugins: {
+              title: {
+                  display: true,
+                  text: 'Report from '+['<%= @start_date %>']+ ' to ' +
+                  ['<%= @end_date %>']
+              }
+          }
+      }
+    };
 
-</form>
+    const report_by_category = new Chart(ctx,config);
+  </script>
+</div>

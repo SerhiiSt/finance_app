@@ -1,13 +1,61 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+operation1:
+  amount: 20.34
+  category: Transport
+  description: Bus fare
+  odate: 2023-01-01T22:54:00.000Z
+operation10:
+  amount: 200
+  category: Clothing And Shoes
+  description: buy leather shoes
+  odate: 2023-02-20T22:28:00.000Z
+operation11:
+  amount: 231
+  category: Presents
+  description: buy silver pen for grandpa
+  odate: 2023-01-20T22:36:00.000Z
+operation12:
+  amount: 100
+  category: Mobile connection and Internet
+  description: payment for Internet
+  odate: 2023-02-10T22:40:00.000Z
+operation2:
+  amount: 12.34
+  category: Medicine
+  description: Buy aspirin
+  odate: 2023-01-02T22:56:00.000Z
+operation3:
+  amount: 123.34
+  category: Restaurants
+  description: McDonalds
+  odate: 2023-01-04T23:16:00.000Z
+operation4:
+  amount: 34.56
+  category: Restaurants
+  description: Cappuccino
+  odate: 2023-01-11T23:18:00.000Z
+operation5:
+  amount: 89.56
+  category: Restaurants
+  description: Meal, Inexpensive Restaurant
+  odate: 2023-02-14T23:20:00.000Z
+operation6:
+  amount: 3.5
+  category: Markets
+  description: Milk (regular), (1 liter)
+  odate: 2023-02-09T23:23:00.000Z
+operation7:
+  amount: 1200
+  category: Utilities (Monthly)
+  description: Basic (Electricity, Heating, Cooling, Water, Garbage)
+  odate: 2023-01-30T23:33:00.000Z
+operation8:
+  amount: 450
+  category: Sports And Leisure
+  description: Fitness Club
+  odate: 2023-02-02T23:38:00.000Z
+operation9:
+  amount: 450
+  category: Childcare
+  description: Preschool
+  odate: 2023-01-15T23:40:00.000Z
 
-one:
-  amount: 9.99
-  odate: 2023-01-13 18:01:58
-  description: MyString
-  category: one
-
-two:
-  amount: 9.99
-  odate: 2023-01-13 18:01:58
-  description: MyString
-  category: two

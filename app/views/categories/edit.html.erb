@@ -1,10 +1,9 @@
-<h1>Editing category</h1>
-
-<%= render "form", category: @category %>
-
+<div class='category_edit'>
+  <h1>Editing category</h1>
+</div>
+<%= render "shared/form", category: @category %>
 <br>
-
-<div>
-  <%= link_to "Show this category", @category %> |
-  <%= link_to "Back to categories", categories_path %>
+<div class="btn-group" role="group">
+  <%= link_to "Show this category", @category, class:'btn btn-info' %>
+  <%= link_to "Back to categories", categories_path ,class:'btn btn-warning'%>
 </div>

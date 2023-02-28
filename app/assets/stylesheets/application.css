@@ -13,3 +13,243 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  font-family: "Playfair", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #333333;
+  background-color: #F8F8F8;
+}
+
+.new_category,
+.category_label,
+.new_op,
+.operations {
+  text-align: center;
+}
+
+.form_category_control {
+  text-align: left;
+}
+
+.op_links {
+  position: relative;
+  left: 550px;
+  margin-top: -68px;
+}
+
+.op_submit {
+  position: relative;
+  left: 390px;
+  margin-top: 20px;
+}
+
+.form_categories_name input {
+  display: block;
+
+  width: 60%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 2;
+  color: #555555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+}
+
+
+#back_operation {
+  position: relative;
+  left: 670px;
+  margin-top: -70px;
+}
+
+.form_categories_name {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_operation {
+  position: relative;
+  left: 400px;
+}
+
+.row {
+  margin-top: 20px;
+  margin-right: 0;
+  margin-left: 520px;
+}
+
+
+.form_categories_description textarea {
+  display: block;
+
+  width: 60%;
+  height: 59px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form_category_sumbit {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.showbtn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.clear-block,
+.new_operation,
+.show_operations {
+  position: relative;
+  left: 90px;
+}
+
+.op_amount,
+.op_odate,
+.op_description,
+.op_category {
+  position: relative;
+  left: 350px;
+  text-align: left;
+}
+
+#operation_amount,
+#operation_odate,
+#operation_description,
+#operation_category_id {
+  width: 40%;
+  text-align: center;
+}
+
+#category,
+.edit_operation {
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+#label {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#gbtn {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-group {
+  display: inline-block;
+  left: 730px;
+  margin-top: -120px;
+}
+
+.back_to_categories {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.report_generator {
+  height: 96px;
+}
+
+.category_page {
+  height: 2px;
+}
+
+.application {
+  margin-top: 50px;
+}
+
+.app_info {
+  margin-top: 40px;
+  padding: 108px;
+}
+
+.category_edit,
+.report_generator,
+.reports,
+.application,
+.app_info,
+.page-header,
+.description_label,
+.report_c,
+.page-header,
+.description_label,
+.report_c,
+.report_d {
+  text-align: center;
+}
+
+.report_d {
+  margin-top: 70px;
+}
+
+.field_with_errors,
+.form_cotrol {
+  width: 600px;
+}
+
+.field_with_errors#operation_amount {
+  width: 40%;
+}
+
+.pagination {
+  display: relative;
+  padding-left: 565px;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.btn-info,
+.btn-succes,
+.button_to {
+  display: inline;
+}
+
+#report_category {
+  text-align: center;
+  width: 40%;
+}
+
+input#operation_category_id,
+input#operation_description,
+input#operation_amount {
+  text-align: left;
+}
+
+select#type_operation,
+select#category_id,
+input#start_date,
+input#end_date {
+  width: 31%;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  bottom: -95px;
+
+}
