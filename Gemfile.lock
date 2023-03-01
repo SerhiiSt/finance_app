@@ -143,6 +143,7 @@ GEM
     nokogiri (1.14.0)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    pg (1.4.6)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -233,7 +234,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kaminari
-  minitest
+  pg
   puma (~> 5.0)
   rails (~> 7.0.4)
   selenium-webdriver
@@ -246,7 +247,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.1.4
