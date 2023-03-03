@@ -30,6 +30,11 @@ body {
   text-align: center;
 }
 
+.new_category,
+.new_op {
+  margin-top: 40px;
+}
+
 .form_category_control {
   text-align: left;
 }
@@ -43,7 +48,7 @@ body {
 .op_submit {
   position: relative;
   left: 390px;
-  margin-top: 20px;
+  margin-top: 120px;
 }
 
 .form_categories_name input {
@@ -109,11 +114,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .showbtn {
   text-align: center;
   margin-top: 80px;
+  padding: 10px;
 }
 
 .clear-block,
@@ -160,7 +167,7 @@ body {
 .btn-group {
   display: inline-block;
   left: 730px;
-  margin-top: -120px;
+  margin-top: -210px;
 }
 
 .back_to_categories {
@@ -168,7 +175,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  padding: 30px;
 }
 
 .report_generator {
@@ -201,6 +209,10 @@ body {
 .report_c,
 .report_d {
   text-align: center;
+}
+
+.category_edit {
+  margin-top: 40px;
 }
 
 .report_d {
@@ -249,7 +261,15 @@ input#end_date {
 }
 
 footer {
+
   position: relative;
   bottom: -95px;
+}
 
+#label {
+  padding: 53px;
+}
+
+form#edit_category_1.edit_category {
+  padding: 40px;
 }
